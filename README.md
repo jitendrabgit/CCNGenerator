@@ -8,9 +8,14 @@ Section 2:
 	JDK Version: java version "1.8.0_92"
 
 Section 3 
-a)	TODO : Sonar lint / EclEmma scan Snapshot 
-b)	TODO : Final Output Snapshot 
-c)	TODO : Junit Coverage Snapshot
+a)	Sonar lint :
+https://github.com/jitendrabgit/CCNGenerator/blob/master/images_snapshot/sonarlint%20report.PNG
+
+b)	Final Output Snapshot :
+https://github.com/jitendrabgit/CCNGenerator/tree/master/images_snapshot/Output%20-%20json%20response
+
+c)	Junit Coverage Snapshot :
+https://github.com/jitendrabgit/CCNGenerator/blob/master/images_snapshot/code%20coverage.PNG
 
 
 Section 4 
