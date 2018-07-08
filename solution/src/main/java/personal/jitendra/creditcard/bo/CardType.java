@@ -9,21 +9,27 @@ package personal.jitendra.creditcard.bo;
 public enum CardType {
 	VISA("4", 16), MASTER("5", 16), AMERICANEXPRESS("37", 15), DISCOVER("6", 15);
 
-	private String startsWith;
+	private String numberStartsWith;
 
-	private int length;
+	private int numberLength;
 
-	CardType(String startingDigits, int length) {
-		this.startsWith = startingDigits;
-		this.length = length;
+	/**
+	 * Constructor for CardType
+	 * 
+	 * @param numberStartsWith
+	 * @param numberLength
+	 */
+	CardType(String numberStartsWith, int numberLength) {
+		this.numberStartsWith = numberStartsWith;
+		this.numberLength = numberLength;
 	}
 
-	public String getStartsWith() {
-		return startsWith;
+	public String getNumberStartsWith() {
+		return numberStartsWith;
 	}
 
-	public int getLength() {
-		return length;
+	public int getNumberLength() {
+		return numberLength;
 	}
 
 }

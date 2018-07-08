@@ -15,7 +15,7 @@ public final class CreditCard {
 	private final String creditCardNumber;
 	private final String expiryDate;
 
-	CreditCard(CardType cardType, String creditCardNumber) {
+	public CreditCard(CardType cardType, String creditCardNumber) {
 		this.cardType = cardType;
 		this.creditCardNumber = creditCardNumber;
 		Date date = new Date();

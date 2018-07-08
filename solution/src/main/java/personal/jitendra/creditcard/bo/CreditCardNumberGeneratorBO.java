@@ -15,7 +15,7 @@ public class CreditCardNumberGeneratorBO {
 	private Random random = new Random();
 
 	public String generate(CardType cardType) {
-		return generate(cardType.getStartsWith(), cardType.getLength());
+		return generate(cardType.getNumberStartsWith(), cardType.getNumberLength());
 	}
 
 	private String generate(String startWith, int ccnLength) {

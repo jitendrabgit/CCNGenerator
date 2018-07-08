@@ -8,6 +8,10 @@ package personal.jitendra.creditcard.validator;
  */
 public class CreditCardNumberValidator {
 
+	private CreditCardNumberValidator() {
+
+	}
+
 	public static boolean validateCreditCardNumber(String number) {
 		int sum = 0;
 		int length = number.length();

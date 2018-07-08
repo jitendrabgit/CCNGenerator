@@ -34,8 +34,7 @@ public class CreditCardNumberGeneratorController {
 		int numberOfCards = Integer.parseInt(noOfCards);
 		List<CreditCard> creditCardList = ccnGenerator.generateCreditCards(cardType, numberOfCards);
 		ObjectMapper mapper = new ObjectMapper();
-		String jsonString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(creditCardList);
-		return jsonString;
+		return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(creditCardList);
 
 	}
 }
