@@ -1,5 +1,5 @@
 # CCNGenerator
-Section 1
+Section 1:
 	Name: Jitendra Bhamare
 	Years of Experience: 12 years 11 months
 
