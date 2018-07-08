@@ -37,7 +37,6 @@ public class CreditCardNumberValidator implements Callable<Boolean> {
 
 	@Override
 	public Boolean call() throws Exception {
-		// TODO Auto-generated method stub
 		return validateCreditCardNumber(number);
 	}
 }
