@@ -7,7 +7,7 @@ package personal.jitendra.creditcard.bo;
  *
  */
 public enum CardType {
-	VISA("4", 16), MASTER("5", 16), AMERICANEXPRESS("37", 15), DISCOVER("6", 15);
+	VISA("4", 16), MASTER("5", 16), AMERICANEXPRESS("37", 15), DISCOVER("6", 16);
 
 	private String numberStartsWith;
 
