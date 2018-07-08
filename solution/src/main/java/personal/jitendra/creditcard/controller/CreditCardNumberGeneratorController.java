@@ -1,6 +1,7 @@
 package personal.jitendra.creditcard.controller;
 
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -28,7 +29,7 @@ public class CreditCardNumberGeneratorController {
 
 	@RequestMapping("/CCEngine/{typeOfCard}/{noOfCards}")
 	public String generateCreditCards(@PathVariable String typeOfCard, @PathVariable String noOfCards)
-			throws JsonProcessingException {
+			throws JsonProcessingException, InterruptedException, ExecutionException {
 
 		CardType cardType = CardType.valueOf(typeOfCard);
 		int numberOfCards = Integer.parseInt(noOfCards);

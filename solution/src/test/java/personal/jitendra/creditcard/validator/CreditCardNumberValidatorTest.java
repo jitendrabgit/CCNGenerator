@@ -15,21 +15,23 @@ public class CreditCardNumberValidatorTest {
 
 	/**
 	 * test validateCreditCardNumber method with valid creditCardNumber
+	 * @throws InterruptedException 
 	 */
 	@Test
-	public void testValidateCreditCardNumberWithValidCCN() {
+	public void testValidateCreditCardNumberWithValidCCN() throws InterruptedException {
 		String creditCardNumber = "4374436105489468";
-		boolean isValidCreditCardNumber = CreditCardNumberValidator.validateCreditCardNumber(creditCardNumber);
+		boolean isValidCreditCardNumber = new CreditCardNumberValidator(creditCardNumber).validateCreditCardNumber(creditCardNumber);
 		assertTrue(isValidCreditCardNumber);
 	}
 
 	/**
 	 * test validateCreditCardNumber method with invalid creditCardNumber
+	 * @throws InterruptedException 
 	 */
 	@Test
-	public void testValidateCreditCardNumberWithInValidCCN() {
-		String creditCardNumber = "4374436105489467";
-		boolean isValidCreditCardNumber = CreditCardNumberValidator.validateCreditCardNumber(creditCardNumber);
+	public void testValidateCreditCardNumberWithInValidCCN() throws InterruptedException {
+		String creditCardNumber = "4374436105489465";
+		boolean isValidCreditCardNumber = new CreditCardNumberValidator(creditCardNumber).validateCreditCardNumber(creditCardNumber);
 		assertFalse(isValidCreditCardNumber);
 	}
 
