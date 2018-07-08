@@ -22,9 +22,7 @@ public class CreditCardNumberValidator {
 
 			if ((i % 2) == 0) {
 				digit = digit * 2;
-				if (digit > 9) {
-					digit = digit > 9 ? digit - 9 : digit;
-				}
+				digit = digit > 9 ? digit - 9 : digit;
 			}
 			sum += digit;
 		}
